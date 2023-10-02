@@ -79,6 +79,7 @@ body {
 strong {
     color: hsl(0, 6%, 24%);
     font-weight: 600;
+    letter-spacing: 0.69rem;
 }
 
 .content-description {
@@ -121,8 +122,8 @@ input:focus {
     height: 100%;
     background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
     box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
-    border-radius: 100px;
-    padding: 0.9375rem 1.75rem;
+    border-radius: 28px;
+    padding: 0.85rem 1.65rem;
     border: 0;
     transition: transform ease-out 150ms;
 }
@@ -137,11 +138,12 @@ input:focus {
 }
 
 .error-message {
-    visibility: hidden;
+    height: 1.92125rem;
+    display: block;
     font-size: 0.8125rem;
     text-align: left;
     color: hsl(0, 93%, 68%);
-    padding: 0.6153em 1.8461em 0;
+    padding: 0.4153em 1.9461em 0;
 }
 
 footer {
@@ -180,7 +182,7 @@ footer {
     .logo {
         max-width: none;
         grid-area: logo;
-        padding: 4rem 10.3125rem 8.5rem;
+        padding: 4.1rem 10.3125rem 8.5rem;
         margin: 0;
     }
 
@@ -199,14 +201,14 @@ footer {
 
     .content-container {
         grid-area: main-content;
-        padding: 1.25rem 13.75rem 9.5rem 10.3125rem;
+        padding: 1.25rem 13.75rem 8.1rem 10.3125rem;
     }
 
     .content-heading {
         font-size: 4rem;
         font-weight: 300;
-        line-height: 1;
-        letter-spacing: 1.0825rem;
+        line-height: 1.05;
+        letter-spacing: 1.07rem;
         margin-bottom: 0.3em;
     }
 
@@ -229,7 +231,11 @@ footer {
     }
 
     .submit-btn {
-        padding: 1.1875rem 2.875rem
+        padding: 1.1875rem 2.75rem
+    }
+
+    .error-message {
+        padding: 0.4153em 2.5461em 0;
     }
 
     footer {

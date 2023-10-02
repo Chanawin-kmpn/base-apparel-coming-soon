@@ -43,12 +43,10 @@ function validateEmail() {
 
     if (emailSub === "") {
         emailInputStyle("error");
-        errorMessage.style.visibility = "revert";
         errorMessage.textContent = "Email address is required";
         errorIcon.style.display = "block";
     } else if (!emailRegex.test(emailSub)) {
         emailInputStyle("error");
-        errorMessage.style.visibility = "revert";
         errorMessage.textContent = "Please provide a valid email";
         errorIcon.style.display = "block";
     } else {
