@@ -181,7 +181,7 @@ footer {
     .logo {
         max-width: none;
         grid-area: logo;
-        padding: 4.6875rem 10.3125rem 8.5rem;
+        padding: 4rem 10.3125rem 8.5rem;
         margin: 0;
     }
 
@@ -200,7 +200,7 @@ footer {
 
     .content-container {
         grid-area: main-content;
-        padding: 0 13.75rem 9.5rem 10.3125rem;
+        padding: 2rem 13.75rem 9.5rem 10.3125rem;
     }
 
     .content-heading {
