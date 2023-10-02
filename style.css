@@ -93,7 +93,6 @@ strong {
 input {
     color: hsl(0, 6%, 24%);
     width: 100%;
-    /* max-width: 19.4375rem; */
     max-width: 60rem;
     padding: 0.6857em 1.7142em 0.6428em;
     border-radius: 100px;
@@ -118,8 +117,8 @@ input:focus {
 
 .submit-btn {
     position: absolute;
-    top: -0.0625rem;
-    right: -0.0625rem;
+    right: 0;
+    height: 100%;
     background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
     box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
     border-radius: 100px;

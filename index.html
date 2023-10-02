@@ -26,8 +26,8 @@
     </div>
 
     <div class="hero-image">
-      <img class="bg-hero-mobile"src="./images/hero-mobile.jpg" alt="Hero image mobile">
-      <img class="bg-hero-desktop"src="./images/hero-desktop.jpg" alt="Hero image desktop">
+      <img class="bg-hero-mobile" src="./images/hero-mobile.jpg" alt="Hero image mobile">
+      <img class="bg-hero-desktop" src="./images/hero-desktop.jpg" alt="Hero image desktop">
     </div>
 
     <div class="content-container">
@@ -38,20 +38,23 @@
       <div class="email-form">
         <form class="input-email">
           <input type="email" name="email" placeholder="Email Address" id="emailSubmit">
+          <div class="error-icon">
+            <img src="./images/icon-error.svg" alt="Error icon">
+          </div>
+          <button class="submit-btn" onclick="validateEmail()"><img src="./images/icon-arrow.svg"
+              alt="Submit button"></button>
         </form>
-        <div class="error-icon">
-          <img src="./images/icon-error.svg" alt="Error icon">
-        </div>
-        <button class="submit-btn" onclick="validateEmail()"><img src="./images/icon-arrow.svg" alt="Submit button"></button>
       </div>
-      <div class="error-message" id="error-message"></div>
+      <div class="error-message" id="error-message" aria-live="polite"></div>
     </div>
   </main>
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://www.frontendmentor.io/profile/Upond" target="_blank" >Chanawin Kamolpanus</a>.
+      Challenge by <a
+        href="https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Upond" target="_blank">Chanawin Kamolpanus</a>.
     </p>
   </footer>
 

@@ -1,3 +1,11 @@
+let form = document.querySelector('.input-email');
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    validateEmail();
+});
+
 function validateEmail() {
     let emailSub = document.getElementById("emailSubmit").value;
     let emailInput = document.getElementById("emailSubmit");
@@ -5,6 +13,7 @@ function validateEmail() {
     let errorIcon = document.querySelector('.error-icon');
 
     let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
     function emailInputStyle(prop) {
         var viewportWidth = window.innerWidth;
@@ -19,14 +28,14 @@ function validateEmail() {
                 emailInput.style.paddingBlockStart = "0.8rem";
                 emailInput.style.paddingBlockEnd = "0.8rem";
             }
-            emailInput.style.borderWidth = "2px"
-            emailInput.style.borderColor = "hsla(0, 92%, 68%, 1)";
+            emailInput.style.outlineWidth = "2px"
+            emailInput.style.outlineColor = "hsla(0, 92%, 68%, 1)";
             emailInput.style.opacity = "1";
         } else if (prop === "pass") {
             emailInput.style.paddingBlockStart = "";
             emailInput.style.paddingBlockEnd = "";
-            emailInput.style.borderWidth = ""
-            emailInput.style.borderColor = "";
+            emailInput.style.outlineWidth = ""
+            emailInput.style.outlineColor = "";
             emailInput.style.opacity = "";
         }
     }
