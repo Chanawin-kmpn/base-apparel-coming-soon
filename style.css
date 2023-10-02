@@ -146,7 +146,7 @@ input:focus {
 }
 
 footer {
-    position: sticky;
+    position: absolute;
     background: white;
     width: 100%;
     bottom: 0;
