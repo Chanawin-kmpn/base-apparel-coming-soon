@@ -37,7 +37,7 @@ body {
     font-weight: 400;
     line-height: 1.5714;
     text-align: center;
-    background: linear-gradient(150deg, #FFF 0%, #FFF4F4 100%);
+    background: linear-gradient(150deg, #FFF 0%, #FFF4F4 100%) no-repeat;
 }
 
 .container {
@@ -149,7 +149,6 @@ footer {
     position: absolute;
     background: white;
     width: 100%;
-    bottom: 0;
     font-size: 0.875rem;
     text-align: center;
 }
@@ -164,7 +163,7 @@ footer {
         text-align: left;
         line-height: 1.75;
         align-items: normal;
-        background: url(./images/bg-pattern-desktop.svg);
+        background: url(./images/bg-pattern-desktop.svg) no-repeat;
     }
 
     .container {
