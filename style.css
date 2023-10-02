@@ -116,7 +116,7 @@ input:focus {
     right: 4.75rem;
 }
 
-.summit-btn {
+.submit-btn {
     position: absolute;
     top: -0.0625rem;
     right: -0.0625rem;
@@ -128,12 +128,12 @@ input:focus {
     transition: transform ease-out 150ms;
 }
 
-.summit-btn:hover {
+.submit-btn:hover {
     background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
     filter: brightness(1.2);
 }
 
-.summit-btn:active {
+.submit-btn:active {
     background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
 }
 
@@ -229,7 +229,7 @@ footer {
         right: 7.25rem;
     }
 
-    .summit-btn {
+    .submit-btn {
         padding: 1.1875rem 2.875rem
     }
 
