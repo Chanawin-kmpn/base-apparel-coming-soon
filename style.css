@@ -1,0 +1,239 @@
+:root {
+    --fs-mobile: 0.875rem;
+    --fs-desktop: 1rem;
+}
+
+html,
+body {
+    height: 100%;
+    box-sizing: inherit;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5714;
+    text-align: center;
+    background: linear-gradient(150deg, #FFF 0%, #FFF4F4 100%);
+}
+
+.container {
+    padding: 2rem 8.5333% 4.4375rem;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    max-width: 6.25rem;
+}
+
+.hero-image {
+    /* background: url(./images/hero-mobile.jpg) no-repeat;
+    height: 100%;
+    max-height: 15.625rem; */
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-bottom: 4rem;
+}
+
+.bg-hero-desktop {
+    display: none;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.content-heading {
+    margin-bottom: 0.4em;
+    color: hsl(0, 36%, 70%);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.676875rem;
+}
+
+strong {
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+}
+
+.content-description {
+    color: hsl(0, 36%, 70%);
+    margin-bottom: 2.2857em;
+}
+
+.email-form {
+    position: relative;
+}
+
+input {
+    color: hsl(0, 6%, 24%);
+    width: 100%;
+    /* max-width: 19.4375rem; */
+    max-width: 60rem;
+    padding: 0.6857em 1.7142em 0.6428em;
+    border-radius: 100px;
+    border: 1px solid #CE9898;
+    background: transparent;
+    opacity: 0.5;
+    line-height: 2;
+}
+
+input:focus {
+    border: none;
+    outline: 1px solid #CE9898;
+    opacity: 1;
+}
+
+.error-icon {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 4.75rem;
+}
+
+.summit-btn {
+    position: absolute;
+    top: -0.0625rem;
+    right: -0.0625rem;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+    box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.25);
+    border-radius: 100px;
+    padding: 0.9375rem 1.75rem;
+    border: 0;
+    transition: transform ease-out 150ms;
+}
+
+.summit-btn:hover {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+    filter: brightness(1.2);
+}
+
+.summit-btn:active {
+    background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+}
+
+.error-message {
+    visibility: hidden;
+    font-size: 0.8125rem;
+    text-align: left;
+    color: hsl(0, 93%, 68%);
+    padding: 0.6153em 1.8461em 0;
+}
+
+footer {
+    position: sticky;
+    background: white;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: var(--fs-desktop);
+        text-align: left;
+        line-height: 1.75;
+        align-items: normal;
+        background: url(./images/bg-pattern-desktop.svg);
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 830px 1fr;
+        grid-template-rows: 13.1875rem 1fr;
+        grid-template-areas:
+            'logo hero-image'
+            'main-content hero-image';
+        height: 100%;
+        padding: 0;
+    }
+
+    .logo {
+        max-width: none;
+        grid-area: logo;
+        padding: 4.6875rem 10.3125rem 8.5rem;
+        margin: 0;
+    }
+
+    .hero-image {
+        grid-area: hero-image;
+        margin: 0;
+    }
+
+    .bg-hero-mobile {
+        display: none;
+    }
+
+    .bg-hero-desktop {
+        display: block;
+    }
+
+    .content-container {
+        grid-area: main-content;
+        padding: 0 13.75rem 9.5rem 10.3125rem;
+    }
+
+    .content-heading {
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: 1.0825rem;
+        margin-bottom: 0.5em;
+    }
+
+    strong {
+        line-height: 1.1093;
+    }
+
+    .content-description {
+        margin-bottom: 2.5rem;
+    }
+
+    input {
+        padding: 0.8375rem 2rem 0.8125rem;
+        line-height: 1.75;
+    }
+
+    .error-icon {
+        top: 1rem;
+        right: 7.25rem;
+    }
+
+    .summit-btn {
+        padding: 1.1875rem 2.875rem
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
