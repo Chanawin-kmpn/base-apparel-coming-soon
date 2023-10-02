@@ -25,8 +25,8 @@ function validateEmail() {
                 emailInput.style.paddingBlockStart = "0.6rem";
                 emailInput.style.paddingBlockEnd = "0.5rem";
             } else {
-                emailInput.style.paddingBlockStart = "0.8rem";
-                emailInput.style.paddingBlockEnd = "0.8rem";
+                emailInput.style.paddingBlockStart = "0.93rem";
+                emailInput.style.paddingBlockEnd = "0.7rem";
             }
             emailInput.style.outlineWidth = "2px"
             emailInput.style.outlineColor = "hsla(0, 92%, 68%, 1)";
@@ -43,10 +43,12 @@ function validateEmail() {
 
     if (emailSub === "") {
         emailInputStyle("error");
+        errorMessage.style.visibility = "revert"
         errorMessage.textContent = "Email address is required";
         errorIcon.style.display = "block";
     } else if (!emailRegex.test(emailSub)) {
         emailInputStyle("error");
+        errorMessage.style.visibility = "revert"
         errorMessage.textContent = "Please provide a valid email";
         errorIcon.style.display = "block";
     } else {
